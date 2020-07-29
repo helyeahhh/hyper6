@@ -648,13 +648,9 @@ header {
 
     ul
     {   
-        display: -webkit-box;   
-        display: -ms-flexbox;   
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
         padding: 20px 0px;
         margin: 0 auto;
+        text-align: center;
     }
     .slick-dots li {
         padding: 10px 10px;
