@@ -387,7 +387,7 @@ header {
     #tool-kit {
         float: right;
 
-        img {
+        svg {
             padding: 0px 22px;
         }
     }
@@ -934,7 +934,7 @@ footer {
     header #nav {
         width: initial;
     }
-    header li, header #tool-kit img {
+    header li, header #tool-kit svg {
         padding: 0px 5px;
     }
 

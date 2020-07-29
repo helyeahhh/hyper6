@@ -368,7 +368,7 @@ header .active, header a:hover {
 header #tool-kit {
   float: right;
 }
-header #tool-kit img {
+header #tool-kit svg {
   padding: 0px 22px;
 }
 
@@ -877,7 +877,7 @@ header .menu-icon .navicon:after {
     width: initial;
   }
 
-  header li, header #tool-kit img {
+  header li, header #tool-kit svg {
     padding: 0px 5px;
   }
 
