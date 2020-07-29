@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 
 // Global Styles
@@ -7,7 +14,8 @@ html {
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -29,47 +37,66 @@ a {
 }
 
 .flex-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .flex-col-2 {
-    flex: 16.6666%;
+    -webkit-box-flex: 16.6666%;
+        -ms-flex: 16.6666%;
+            flex: 16.6666%;
     max-width: 16.6666%;
 }
 
 .flex-col-3 {
-    flex: 25%;
+    -webkit-box-flex: 25%;
+        -ms-flex: 25%;
+            flex: 25%;
     max-width: 25%;
 }
 
 .flex-col-4 {
-    flex: 33.33%;
+    -webkit-box-flex: 33.33%;
+        -ms-flex: 33.33%;
+            flex: 33.33%;
     max-width: 33.33%;
 }
 
 .flex-col-5 {
-    flex: 41.66667%;
+    -webkit-box-flex: 41.66667%;
+        -ms-flex: 41.66667%;
+            flex: 41.66667%;
     max-width: 41.66667%;
 }
 
 .flex-col-6 {
-    flex: 50%;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
     max-width: 50%;
 }
 
 .flex-col-7 {
-    flex: 58.3333%;
+    -webkit-box-flex: 58.3333%;
+        -ms-flex: 58.3333%;
+            flex: 58.3333%;
     max-width: 58.3333%;
 }
 
 .flex-col-8 {
-    flex: 66.6667%;
+    -webkit-box-flex: 66.6667%;
+        -ms-flex: 66.6667%;
+            flex: 66.6667%;
     max-width: 66.6667%;
 }
 
 .flex-col-9 {
-    flex: 75%;
+    -webkit-box-flex: 75%;
+        -ms-flex: 75%;
+            flex: 75%;
     max-width: 75%;
 }
 
@@ -91,7 +118,8 @@ button {
     padding: 0px 50px;
     height: 65px;
     background-color: #f47f4a;
-    box-shadow: -12px 13px 52px -7px #f47f4a;
+    -webkit-box-shadow: -12px 13px 52px -7px #f47f4a;
+            box-shadow: -12px 13px 52px -7px #f47f4a;
     border: none;
     font-size: 22px;
     a {
@@ -101,7 +129,8 @@ button {
 }
 
 .slick-arrow {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 
@@ -320,6 +349,8 @@ header {
         display: block;
         height: 2px;
         position: relative;
+        -webkit-transition: background .2s ease-out;
+        -o-transition: background .2s ease-out;
         transition: background .2s ease-out;
         width: 18px;
     }
@@ -352,11 +383,15 @@ header {
     }
     
     .menu-btn:checked ~ .menu-icon .navicon:before {
-        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
     }
     
     .menu-btn:checked ~ .menu-icon .navicon:after {
-        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
     }
     
     .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
@@ -506,6 +541,8 @@ header {
         .slide{
             padding:0;
             .child-element{
+            -webkit-transition: height .2s ease;
+            -o-transition: height .2s ease;
             transition: height .2s ease;
             width:100%;
             height: 600px;
@@ -576,8 +613,13 @@ header {
         margin: 0px 10px;
         padding: 20px 35px;
         height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-flow: column nowrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
         .client-info {
             margin-top: auto;
             margin-bottom: 40px;
@@ -606,8 +648,11 @@ header {
 
     ul
     {   
+        display: -webkit-box;   
+        display: -ms-flexbox;   
         display: flex;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         padding: 20px 0px;
         margin: 0 auto;
     }
@@ -655,6 +700,8 @@ header {
     .description-title {
         cursor: pointer;
         padding-left: 10px;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
         transition: 0.3s;
         margin-top: 2px;
         margin-bottom: 2px;
@@ -671,6 +718,8 @@ header {
         margin-left: 0px;
         padding-left: 10px;
         padding-top: 5px;
+        -webkit-transition: max-height 0.2s ease-out;
+        -o-transition: max-height 0.2s ease-out;
         transition: max-height 0.2s ease-out;
     }
     
@@ -691,6 +740,18 @@ header {
         width: 75%;
         height: 58px;
         font-size: 22px;
+        color: #4e867d;
+    }
+    input::-webkit-input-placeholder {
+        color: #4e867d;
+    }
+    input::-moz-placeholder {
+        color: #4e867d;
+    }
+    input:-ms-input-placeholder {
+        color: #4e867d;
+    }
+    input::-ms-input-placeholder {
         color: #4e867d;
     }
     input::placeholder {
@@ -742,7 +803,9 @@ footer {
 //Media Queries
 @media all and (max-width: 576px) {
     .flex-col-xs-12, .flex-col-2.flex-col-12-xs, .flex-col-3.flex-col-xs-12{
-        flex: 100%;
+        -webkit-box-flex: 100%;
+            -ms-flex: 100%;
+                flex: 100%;
         max-width: 100%;
     }
     header {
@@ -755,12 +818,16 @@ footer {
             margin-bottom: 20px;
         }
         div.flex-col-2 {
-            flex: 50%;
+            -webkit-box-flex: 50%;
+                -ms-flex: 50%;
+                    flex: 50%;
             max-width: 50%;
 
         }
         div.flex-col-8 {
-            flex: 50%;
+            -webkit-box-flex: 50%;
+                -ms-flex: 50%;
+                    flex: 50%;
             max-width: 50%;
         }
         #tool-kit {
@@ -795,13 +862,19 @@ footer {
 @media all and (max-width: 768px) {
     header {
         .flex-col-2 {
-            flex: 35%;
+            -webkit-box-flex: 35%;
+                -ms-flex: 35%;
+                    flex: 35%;
             max-width: 35%;
         }
         .flex-col-8 {
-            flex: 30%;
+            -webkit-box-flex: 30%;
+                -ms-flex: 30%;
+                    flex: 30%;
             max-width: 30%;
-            order: 3;
+            -webkit-box-ordinal-group: 4;
+                -ms-flex-order: 3;
+                    order: 3;
             text-align: right;
         }
         li {
@@ -820,13 +893,18 @@ footer {
         nav .menu {
             clear: both;
             max-height: 0;
+            -webkit-transition: max-height .2s ease-out;
+            -o-transition: max-height .2s ease-out;
             transition: max-height .2s ease-out;
         }
         .menu-icon {
             cursor: pointer;
             display: inline-block;
             position: relative;
-            user-select: none;
+            -webkit-user-select: none;
+               -moz-user-select: none;
+                -ms-user-select: none;
+                    user-select: none;
         }
     
         .menu-icon .navicon:before,
@@ -836,6 +914,8 @@ footer {
             display: block;
             height: 100%;
             position: absolute;
+            -webkit-transition: all .2s ease-out;
+            -o-transition: all .2s ease-out;
             transition: all .2s ease-out;
             width: 100%;
         }   
@@ -859,12 +939,16 @@ footer {
             padding: 0px;
         }
         .flex-col-2 {
-            flex: 100%;
+            -webkit-box-flex: 100%;
+                -ms-flex: 100%;
+                    flex: 100%;
             max-width: 100%;
             text-align: center;
         }
         .flex-col-5 {
-            flex: 100%;
+            -webkit-box-flex: 100%;
+                -ms-flex: 100%;
+                    flex: 100%;
             max-width: 100%;
             text-align: center;
             padding: 10px 0px;
@@ -920,11 +1004,15 @@ footer {
         }
     }
     .flex-col-md-6 {
-        flex: 50%;
+        -webkit-box-flex: 50%;
+            -ms-flex: 50%;
+                flex: 50%;
         max-width: 50%;
     }
     .flex-col-l-3.flex-col-md-12, .flex-col-l-9.flex-col-md-12{
-        flex: 100%;
+        -webkit-box-flex: 100%;
+            -ms-flex: 100%;
+                flex: 100%;
         max-width: 100%;
     }
     
@@ -939,7 +1027,9 @@ footer {
     }
 
     #first-section .flex-col-6 {
-        flex: 100%;
+        -webkit-box-flex: 100%;
+            -ms-flex: 100%;
+                flex: 100%;
         max-width: 100%;
     }
     #second-section {
@@ -957,20 +1047,28 @@ footer {
     }
 
     .flex-col-l-3 {
-        flex: 25%;
+        -webkit-box-flex: 25%;
+            -ms-flex: 25%;
+                flex: 25%;
         max-width: 25%;
     }
     .flex-col-l-6 {
-        flex: 50%;
+        -webkit-box-flex: 50%;
+            -ms-flex: 50%;
+                flex: 50%;
         max-width: 50%;
     }
 
     .flex-col-l-9 {
-        flex: 75%;
+        -webkit-box-flex: 75%;
+            -ms-flex: 75%;
+                flex: 75%;
         max-width: 75%;
     }
     .flex-col-l-12 {
-        flex: 100%;
+        -webkit-box-flex: 100%;
+            -ms-flex: 100%;
+                flex: 100%;
         max-width: 100%;
     }
 }
